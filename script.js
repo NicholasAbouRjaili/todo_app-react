@@ -1,13 +1,24 @@
 // Wait until the HTML page is fully loaded before running the code
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Get reference to HTML elements
-    const addBtn = document.getElementById("addBtn");
     const taskInput = document.getElementById("taskInput");
     const taskList = document.getElementById("taskList");
-
+    function MyButton ({ title }: { title : string}) {
+        return (
+            <button>title</button>
+        ):
+    }
+    
+    export default function MyApp(){
+        return (
+            <div>
+            <MyButton title ="Add task" />
+            </div>
+        );
+    }
+    
     // Make sure all required elements exist
-    if (!addBtn || !taskInput || !taskList) {
+    if (!taskInput || !taskList) {
         console.error("Required DOM elements not found", { addBtn, taskInput, taskList });
         return;
     }
