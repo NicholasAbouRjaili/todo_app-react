@@ -11,3 +11,8 @@ export default function MyApp(){
         </div>
     );
 }
+function MyButton ({ title, onClick }: { title: string; onClick: () => void }) {
+    return (
+        <button onClick={onClick}>{title}</button>
+    );
+}
