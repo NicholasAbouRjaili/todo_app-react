@@ -3,19 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const taskInput = document.getElementById("taskInput");
     const taskList = document.getElementById("taskList");
-    function MyButton ({ title }: { title : string}) {
-        return (
-            <button>title</button>
-        ):
-    }
     
-    export default function MyApp(){
-        return (
-            <div>
-            <MyButton title ="Add task" />
-            </div>
-        );
-    }
     
     // Make sure all required elements exist
     if (!taskInput || !taskList) {
